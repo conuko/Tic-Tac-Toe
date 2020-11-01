@@ -72,7 +72,7 @@ function Square(props) {
         this.setState({
             history: history.concat([{
                 squares: squares,
-            }])
+            }]),
             stepNumber: history.length,
             xIsNext: !this.state.xIsNext,
         });
@@ -105,7 +105,7 @@ function Square(props) {
         if (winner) {
             status = 'Winner: ' + winner;
         } else {
-            status = 'Newxt player: ' + (this.state.xIsNext ? 'X' : '0');
+            status = 'Next player: ' + (this.state.xIsNext ? 'X' : '0');
         }
 
         return (
